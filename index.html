@@ -55,7 +55,7 @@
             border-radius: 5px;
             padding: 30px;
             max-width: 800px;
-            width: 120%;
+            width: 100%;
             box-shadow: 0 0 50px rgba(0, 255, 0, 0.3);
         }
 
@@ -244,6 +244,90 @@
             outline: none;
             flex: 1;
         }
+        /* Add these media queries at the end of your style section */
+
+@media (max-width: 768px) {
+    .terminal {
+        padding: 15px;
+        max-width: 95%;
+        margin: 10px;
+    }
+
+    .terminal-title {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .ascii-art {
+        font-size: 6px;
+        overflow-x: auto;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 12px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .cmd-output {
+        font-size: 12px;
+        padding: 10px;
+        max-height: 200px;
+    }
+
+    .web-terminal {
+        padding: 10px;
+        font-size: 12px;
+        max-height: 300px;
+    }
+
+    .terminal-input,
+    .terminal-cmd {
+        font-size: 12px;
+    }
+
+    .level-indicator {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 10px;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal {
+        padding: 10px;
+    }
+
+    .terminal-title {
+        font-size: 10px;
+    }
+
+    .ascii-art {
+        font-size: 4px;
+    }
+
+    .status-dots {
+        gap: 5px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+}
     </style>
 </head>
 <body>
@@ -835,6 +919,7 @@ Type 'help' to see available commands`;
 </body>
 
 </html>
+
 
 
 
